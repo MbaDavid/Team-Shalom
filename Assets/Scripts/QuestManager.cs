@@ -32,6 +32,7 @@ public class QuestManager : MonoBehaviour
             quests[index].CompleteQuest();
             if (index + 1 < quests.Count)
             {
+
                 StartQuest(++currentQuestIndex); // Start next quest
             }
             else
