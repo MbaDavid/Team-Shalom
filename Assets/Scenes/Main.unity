@@ -148,14 +148,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50337370}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.053775832, y: 0.21951196, z: -0.012118909, w: 0.97405124}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1867480220}
   m_Father: {fileID: 62893966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.32, y: 25.4, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.843, y: 1.94}
@@ -364,6 +364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 243a503758cd36a44944a3b7bd79b23c, type: 3}
       propertyPath: m_Name
       value: Trowel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 243a503758cd36a44944a3b7bd79b23c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1197,6 +1201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d198db2d9ba9d2c498e14ada410b75d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1468,6 +1476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d66ea54b2f68e449b1fabef685b4a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1678,12 +1690,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
+  m_fontSize: 0.1
   m_fontSizeBase: 0.05
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.02
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2220,13 +2232,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quests:
   - questName: Intro Scene
-    itemsToEnable: []
+    questDescription: "Welcome to VR education in agriculture.\nWe will teach you
+      how to plant yam using hydroponic \nmethod of farming. Here is the Yam and
+      Knife on the table"
+    itemsToEnable:
+    - {fileID: 467457453}
+    - {fileID: 468246528}
     itemsToDisable: []
     introAudio: {fileID: 0}
     reminderAudio: {fileID: 0}
     introAnimation: {fileID: 0}
     reminderAnimation: {fileID: 0}
   - questName: Pick up yam
+    questDescription: 
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 0}
@@ -2234,6 +2252,7 @@ MonoBehaviour:
     introAnimation: {fileID: 0}
     reminderAnimation: {fileID: 0}
   - questName: Drop the yam
+    questDescription: 
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 0}
@@ -2241,6 +2260,7 @@ MonoBehaviour:
     introAnimation: {fileID: 0}
     reminderAnimation: {fileID: 0}
   - questName: Cut up the head of the yam
+    questDescription: 
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 0}
@@ -2248,6 +2268,7 @@ MonoBehaviour:
     introAnimation: {fileID: 0}
     reminderAnimation: {fileID: 0}
   - questName: Place the head of yam in tray
+    questDescription: 
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 0}
@@ -2255,6 +2276,7 @@ MonoBehaviour:
     introAnimation: {fileID: 0}
     reminderAnimation: {fileID: 0}
   - questName: Place the head of yam in tray
+    questDescription: 
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 0}
@@ -3071,6 +3093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FullYam
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a9fe5024d3ea8c44b5ffa607b3b97be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3143,7 +3169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5010,6 +5036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50a69c6d84ce409d9cce9c0712bf799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questText: {fileID: 792721797}
 --- !u!4 &1575982007
 Transform:
   m_ObjectHideFlags: 0
@@ -5137,6 +5164,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4c06e5ef1d1878343adba7b74d4cde75, type: 3}
       propertyPath: m_Name
       value: HalfSlice
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c06e5ef1d1878343adba7b74d4cde75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6557,6 +6588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfYam
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4607010b699823d4c9bfc50f0fff0440, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6670,7 +6705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

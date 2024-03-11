@@ -35,6 +35,7 @@ public class QuestManager : MonoBehaviour
         if (index < quests.Count)
         {
             quests[index].StartQuest();
+            GameManager.Main.questText.text = quests[index].questDescription;
         }
     }
 
@@ -62,6 +63,7 @@ public class QuestManager : MonoBehaviour
 public class Quest
 {
     public string questName;
+    [Multiline]public string questDescription;
     public GameObject[] itemsToEnable;
     public GameObject[] itemsToDisable;
     public AudioClip introAudio;
