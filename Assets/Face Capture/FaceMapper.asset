@@ -19,8 +19,8 @@ MonoBehaviour:
   m_Maps:
   - m_Path: Wolf3D_Head.002
     m_Bindings:
-    - m_Location: 32
-      m_ShapeIndex: 0
+    - m_Location: 43
+      m_ShapeIndex: 1
       m_Config:
         m_OverrideSmoothing: 0
         m_Smoothing: 0.138
