@@ -68,8 +68,7 @@ public class Quest
     public GameObject[] itemsToDisable;
     public AudioClip introAudio;
     public AudioClip reminderAudio;
-    public AnimationClip introAnimation;
-    public AnimationClip reminderAnimation;
+
 
     // Start the quest
     public void StartQuest()
@@ -97,11 +96,12 @@ public class Quest
                 audioSource.Play();
             }
 
-            // Play intro animation
-            if (introAnimation != null && animator != null)
+            if (animator != null)
             {
-                animator.Play(introAnimation.name);
+                animator.SetTrigger("talk");
             }
+
+           
         }
     }
 
