@@ -2519,76 +2519,76 @@ MonoBehaviour:
     introAudio: {fileID: 0}
     reminderAudio: {fileID: 0}
   - questName: Pick up yam
-    questDescription: 
+    questDescription: Pick up yam
     itemsToEnable:
     - {fileID: 467457453}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 400203b904e404b4db421ad97b026b1e, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Drop the yam
-    questDescription: 
+    questDescription: Drop the yam
     itemsToEnable:
     - {fileID: 0}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 9d8bee436befb0f429810a35ab037811, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Cut up the head of the yam
-    questDescription: 
+    questDescription: Cut up the head of the yam
     itemsToEnable:
     - {fileID: 468246528}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 8ecbd1fa923d8634bac7412091a9cc83, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Place the head of yam in tray
-    questDescription: 
+    questDescription: Place the head of yam in tray
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 56ae0e8dcf40ebd47834d8dd95cb23f3, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Set The Tray aside
-    questDescription: 
+    questDescription: Set The Tray aside
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 0b88a440d231a554099fec431c381512, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Move Towards The Bucket
-    questDescription: 
+    questDescription: Move Towards The Bucket
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: fd9489f3997895b41a351fccb462540e, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Place The Sliced Head Of Yam Into The Bucket Of Sand
-    questDescription: 
+    questDescription: Place The Sliced Head Of Yam Into The Bucket Of Sand
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: c7e20cab83a9d80419f3d9550bf2d7ec, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Cover The Yam With Sand
-    questDescription: 
+    questDescription: Cover The Yam With Sand
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: f0a450e4cad49f746abf061d2fb67193, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Add Manure To The Bucket Of Sand
-    questDescription: 
+    questDescription: Add Manure To The Bucket Of Sand
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: a3508842506db154ab2d50805c99b21d, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Fill The Bucket With Sand
-    questDescription: 
+    questDescription: Fill the Bucket with Sand
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: f7a117c9fcbc6c544b4a3f70a43594a6, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Drop The Hand Trowel
-    questDescription: 
+    questDescription: Drop The Hand Trowel
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: d9b42daebfef96d4d85e0be11df3fe2a, type: 3}
     reminderAudio: {fileID: 0}
   - questName: Water The Planted Yam
-    questDescription: 
+    questDescription: Water The Planted Yam
     itemsToEnable: []
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 14ebbe56f0b4dd14fa86e62946649e34, type: 3}
