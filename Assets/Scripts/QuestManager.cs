@@ -6,6 +6,20 @@ public class QuestManager : MonoBehaviour
     public List<Quest> quests = new List<Quest>();
     public int currentQuestIndex = 0;
 
+    public static QuestManager Main;
+
+    private void Awake()
+    {
+        if (Main == null)
+        {
+            Main = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     // Call this method to start the quest system
     public void StartQuests()
     {
