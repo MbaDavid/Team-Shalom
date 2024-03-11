@@ -873,6 +873,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &536256583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+  m_PrefabInstance: {fileID: 742555727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &536256586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536256583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8052edd37c5da4ba56c08244eb648a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Mapper: {fileID: 11400000, guid: 21d11ed4ef5104845bd36eef437cd231, type: 2}
+  m_EnabledChannels: 13
+  m_BlendShapes:
+    BrowDownLeft: 0
+    BrowDownRight: 0
+    BrowInnerUp: 0
+    BrowOuterUpLeft: 0
+    BrowOuterUpRight: 0
+    CheekPuff: 0
+    CheekSquintLeft: 0
+    CheekSquintRight: 0
+    EyeBlinkLeft: 0
+    EyeBlinkRight: 0
+    EyeLookDownLeft: 0
+    EyeLookDownRight: 0
+    EyeLookInLeft: 0
+    EyeLookInRight: 0
+    EyeLookOutLeft: 0
+    EyeLookOutRight: 0
+    EyeLookUpLeft: 0
+    EyeLookUpRight: 0
+    EyeSquintLeft: 0
+    EyeSquintRight: 0
+    EyeWideLeft: 0
+    EyeWideRight: 0
+    JawForward: 0
+    JawLeft: 0
+    JawOpen: 0
+    JawRight: 0
+    MouthClose: 0
+    MouthDimpleLeft: 0
+    MouthDimpleRight: 0
+    MouthFrownLeft: 0
+    MouthFrownRight: 0
+    MouthFunnel: 0
+    MouthLeft: 0
+    MouthLowerDownLeft: 0
+    MouthLowerDownRight: 0
+    MouthPressLeft: 0
+    MouthPressRight: 0
+    MouthPucker: 0
+    MouthRight: 0
+    MouthRollLower: 0
+    MouthRollUpper: 0
+    MouthShrugLower: 0
+    MouthShrugUpper: 0
+    MouthSmileLeft: 0
+    MouthSmileRight: 0
+    MouthStretchLeft: 0
+    MouthStretchRight: 0
+    MouthUpperUpLeft: 0
+    MouthUpperUpRight: 0
+    NoseSneerLeft: 0
+    NoseSneerRight: 0
+    TongueOut: 0
+  m_HeadPosition: {x: 0, y: 0, z: 0}
+  m_HeadOrientation: {x: 0, y: 0, z: 0}
+  m_LeftEyeOrientation: {x: 0, y: 0, z: 0}
+  m_RightEyeOrientation: {x: 0, y: 0, z: 0}
+  m_BlendShapesEnabled: 0
+  m_HeadPositionEnabled: 0
+  m_HeadOrientationEnabled: 0
+  m_EyeOrientationEnabled: 0
 --- !u!1 &539866001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4607010b699823d4c9bfc50f0fff0440, type: 3}
@@ -1247,7 +1327,7 @@ MonoBehaviour:
     m_ShotName: New Shot
     m_TakeNumber: 1
     m_Description: 
-    m_Take: {fileID: 0}
+    m_Take: {fileID: 11400000, guid: 3e46dda21afb3409f89c91224dcd167b, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 596977858}
   m_FrameRate:
@@ -1266,12 +1346,14 @@ PlayableDirector:
   m_GameObject: {fileID: 596977856}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
+  m_PlayableAsset: {fileID: 3318769079086892828, guid: 3e46dda21afb3409f89c91224dcd167b, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 4017626573881870878, guid: 3e46dda21afb3409f89c91224dcd167b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &596977859
@@ -1629,6 +1711,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5219931388983474386, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9993773
+      objectReference: {fileID: 0}
+    - target: {fileID: -5219931388983474386, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.02226596
+      objectReference: {fileID: 0}
+    - target: {fileID: -5219931388983474386, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.02736447
+      objectReference: {fileID: 0}
+    - target: {fileID: -5219931388983474386, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00060858723
+      objectReference: {fileID: 0}
+    - target: {fileID: -3985724460449448558, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9997175
+      objectReference: {fileID: 0}
+    - target: {fileID: -3985724460449448558, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.022324633
+      objectReference: {fileID: 0}
+    - target: {fileID: -3985724460449448558, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.008163862
+      objectReference: {fileID: 0}
+    - target: {fileID: -3985724460449448558, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00018352093
+      objectReference: {fileID: 0}
+    - target: {fileID: -3493111014948991070, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3493111014948991070, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3493111014948991070, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2151177228084695291, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2151177228084695291, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2151177228084695291, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 9.948918
+      objectReference: {fileID: 0}
     - target: {fileID: -612374546096155553, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1657,10 +1795,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9cb035b6313f6654d85ebecb2b4a0cc5, type: 2}
+    - target: {fileID: 4131794227039574139, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131794227039574139, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 23.102982
+      objectReference: {fileID: 0}
     - target: {fileID: 4690751286218320163, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9cb035b6313f6654d85ebecb2b4a0cc5, type: 2}
+    - target: {fileID: 4690751286218320163, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690751286218320163, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 5.0785246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690751286218320163, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 6.903677
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1684,7 +1842,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 536256586}
   m_SourcePrefab: {fileID: 100100000, guid: c71bfe5cdb3ca2c4daa6ab2aadfe569c, type: 3}
 --- !u!1 &792721795
 GameObject:
@@ -5624,12 +5785,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Guid: 43b32b3d-b588-4569-8afb-65de83f95b2e
-  m_Actor: {fileID: 0}
+  m_Actor: {fileID: 536256586}
   m_Channels: 13
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0
-      BrowDownRight: 0
+      BrowDownLeft: 0.21490665
+      BrowDownRight: 0.21596551
       BrowInnerUp: 0
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
@@ -5641,33 +5802,33 @@ MonoBehaviour:
       EyeLookDownLeft: 0
       EyeLookDownRight: 0
       EyeLookInLeft: 0
-      EyeLookInRight: 0
+      EyeLookInRight: 0.08727393
       EyeLookOutLeft: 0
       EyeLookOutRight: 0
-      EyeLookUpLeft: 0
-      EyeLookUpRight: 0
-      EyeSquintLeft: 0
-      EyeSquintRight: 0
-      EyeWideLeft: 0
-      EyeWideRight: 0
-      JawForward: 0
-      JawLeft: 0
+      EyeLookUpLeft: 0.10294599
+      EyeLookUpRight: 0.1027205
+      EyeSquintLeft: 0.23355709
+      EyeSquintRight: 0.23941523
+      EyeWideLeft: 0.15287896
+      EyeWideRight: 0.1522379
+      JawForward: 0.016395146
+      JawLeft: 0.03817707
       JawOpen: 0
       JawRight: 0
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
-      MouthFrownLeft: 0
-      MouthFrownRight: 0
+      MouthFrownLeft: 0.10894698
+      MouthFrownRight: 0.099313855
       MouthFunnel: 0
-      MouthLeft: 0
+      MouthLeft: 0.005338072
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
       MouthPressLeft: 0
       MouthPressRight: 0
       MouthPucker: 0
       MouthRight: 0
-      MouthRollLower: 0
+      MouthRollLower: 0.00072935433
       MouthRollUpper: 0
       MouthShrugLower: 0
       MouthShrugUpper: 0
@@ -5680,10 +5841,10 @@ MonoBehaviour:
       NoseSneerLeft: 0
       NoseSneerRight: 0
       TongueOut: 0
-    HeadPosition: {x: 0, y: 0, z: 0}
-    HeadOrientation: {x: 0, y: 0, z: 0, w: 1}
-    LeftEyeOrientation: {x: 0, y: 0, z: 0, w: 1}
-    RightEyeOrientation: {x: 0, y: 0, z: 0, w: 1}
+    HeadPosition: {x: 0.042550616, y: -0.033653196, z: -0.4522322}
+    HeadOrientation: {x: -0.025295971, y: 0.077637926, z: -0.1309276, w: 0.9880236}
+    LeftEyeOrientation: {x: 0.022400301, y: 0.026646461, z: -0.0005972508, w: -0.99939376}
+    RightEyeOrientation: {x: 0.022456553, y: -0.008882507, z: 0.0001995287, w: -0.99970835}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
