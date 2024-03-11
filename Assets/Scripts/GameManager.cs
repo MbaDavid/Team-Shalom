@@ -38,5 +38,12 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         QuestManager.Main.StartQuests();
+        StartCoroutine(FinishQuestIntro(3));
+    }
+
+    IEnumerator FinishQuestIntro(float time)
+    {
+        yield return new WaitForSeconds(time);
+        QuestManager.Main.CompleteQuest(0);
     }
 }
