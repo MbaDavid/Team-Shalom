@@ -11,6 +11,8 @@ public enum CollisionTAG
 public class YamBehaviour : MonoBehaviour
 {
     public GameObject spawnPrefab;
+    public GameObject halfYam;
+    public Transform halfYamPos;
     public List<Transform> spawnPoint;
     public int numOfSpawns;
     public CollisionTAG colliderTag;
@@ -28,7 +30,7 @@ public class YamBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnedCount >= numOfSpawns)
+        if (spawnedCount >= numOfSpawns + 3)
         {
             GameManager.Main.CutuptheheadoftheyamQuest();
         }
@@ -39,11 +41,19 @@ public class YamBehaviour : MonoBehaviour
         
         if (other.CompareTag(colliderTag.ToString()))
         {
-       
+            if (QuestManager.Main.currentQuestIndex != 3)
+                return;
+
+
             if (spawnedCount < numOfSpawns)
             {
-                int i = spawnedCount > spawnPoint.Count ? spawnPoint.Count : spawnedCount;
-                Instantiate(spawnPrefab, spawnPoint[i].transform.position, Quaternion.identity);
+    
+               GameObject go = Instantiate(spawnPrefab, spawnPoint[spawnedCount].transform.position,  spawnPrefab.transform.rotation);
+                go.SetActive(true);
+
+                this.GetComponent<MeshRenderer>().enabled = false;
+                halfYam.SetActive(true);
+                halfYam.transform.position = halfYamPos.position; 
                 spawnedCount++;
             }
         }

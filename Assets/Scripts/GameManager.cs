@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI questText;
 
     public Transform frontPosSpawn;
+
+    public XROrigin xrOrigin;
+    public Transform origin;
 
     private void Awake()
     {
@@ -29,6 +34,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        StartCoroutine( BeginQuest(1));
+    }
+
+    public void Recenter()
+    {
+        xrOrigin.MoveCameraToWorldLocation(origin.position);
+        xrOrigin.MatchOriginUpCameraForward(origin.up, origin.forward);
     }
 
     // Update is called once per frame
@@ -63,9 +74,11 @@ public class GameManager : MonoBehaviour
         if (QuestManager.Main.currentQuestIndex == 2)
         {
             bigYam.transform.position = frontPosSpawn.position;
-            bigYam.transform.rotation = frontPosSpawn.rotation;
+            bigYam.transform.rotation = Quaternion.Euler(-90, 90, 0);
 
             bigYam.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            bigYam.GetComponent<Rigidbody>().isKinematic =true;
+            bigYam.GetComponent<XRGrabInteractable>().enabled =false;
 
             QuestManager.Main.CompleteQuest(2);
         }
