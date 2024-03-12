@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        StartCoroutine( BeginQuest(1));
+      //  Recenter();
     }
 
     public void Recenter()
