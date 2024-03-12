@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class TrayAction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public CollisionTAG colliderTag;
 
-    // Update is called once per frame
-    void Update()
+    public List<Transform> dropPoints;
+
+    int i = 0;
+
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag(colliderTag.ToString()))
+        {
+            if (QuestManager.Main.currentQuestIndex != 4)
+                return;
+
+            other.transform.position = dropPoints[i].position;
+            i++;
+
+        }
+
+
     }
 }

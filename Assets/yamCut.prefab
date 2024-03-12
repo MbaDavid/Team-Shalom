@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 2036130433950989054}
   - component: {fileID: 5665468678084410360}
   - component: {fileID: -3766318934016870939}
-  m_Layer: 0
+  - component: {fileID: 2556286636738871752}
+  m_Layer: 7
   m_Name: yamCut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,3 +279,24 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &2556286636738871752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874081481103606967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.001019393, y: 0.0009895865, z: 0.001044519}
+  m_Center: {x: 0.000004545465, y: -0.00004917732, z: -0.000029305984}

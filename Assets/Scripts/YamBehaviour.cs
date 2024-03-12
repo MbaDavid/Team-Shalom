@@ -6,6 +6,7 @@ using UnityEngine;
 public enum CollisionTAG
 {
     Knife,
+    YamSlice
 }
 
 public class YamBehaviour : MonoBehaviour
@@ -59,7 +60,8 @@ public class YamBehaviour : MonoBehaviour
 
                 this.GetComponent<MeshRenderer>().enabled = false;
                 halfYam.SetActive(true);
-                halfYam.transform.position = halfYamPos.position; 
+                halfYam.transform.position = halfYamPos.position;
+                halfYam.GetComponent<MeshRenderer>().enabled = true;
                 spawnedCount++;
             }
 
