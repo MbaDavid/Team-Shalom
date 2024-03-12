@@ -18,24 +18,34 @@ public class YamBehaviour : MonoBehaviour
    
 
     private int spawnedCount = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (spawnedCount >= numOfSpawns)
+        {
+            GameManager.Main.CutuptheheadoftheyamQuest();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag(colliderTag.ToString()))
         {
-            Debug.Log("Action");
-            Instantiate(spawnPrefab, spawnPoint[spawnedCount].transform.position, Quaternion.identity);
+       
+            if (spawnedCount < numOfSpawns)
+            {
+                int i = spawnedCount > spawnPoint.Count ? spawnPoint.Count : spawnedCount;
+                Instantiate(spawnPrefab, spawnPoint[i].transform.position, Quaternion.identity);
+                spawnedCount++;
+            }
         }
     }
 }

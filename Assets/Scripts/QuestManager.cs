@@ -111,8 +111,9 @@ public class Quest
         // Clean up quest, disable items, etc.
         foreach (GameObject item in itemsToEnable)
         {
-            item.SetActive(false);
+           // item.SetActive(false);
         }
         // Play any completion effects here
     }
+
 }

@@ -6,8 +6,11 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Main;
+    public YamBehaviour bigYam;
 
-    public TextMeshProUGUI questText; 
+    public TextMeshProUGUI questText;
+
+    public Transform frontPosSpawn;
 
     private void Awake()
     {
@@ -45,5 +48,34 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         QuestManager.Main.CompleteQuest(0);
+    }
+
+    public void PickUpYamQuest()
+    {
+        if (QuestManager.Main.currentQuestIndex == 1)
+        {
+            QuestManager.Main.CompleteQuest(1);
+        }
+    }
+
+    public void DropTheYamQuest()
+    {
+        if (QuestManager.Main.currentQuestIndex == 2)
+        {
+            bigYam.transform.position = frontPosSpawn.position;
+            bigYam.transform.rotation = frontPosSpawn.rotation;
+
+            bigYam.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+            QuestManager.Main.CompleteQuest(2);
+        }
+    }
+
+    public void CutuptheheadoftheyamQuest()
+    {
+        if (QuestManager.Main.currentQuestIndex == 3)
+        {
+            QuestManager.Main.CompleteQuest(3);
+        }
     }
 }
