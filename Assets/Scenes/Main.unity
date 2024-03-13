@@ -2950,7 +2950,8 @@ MonoBehaviour:
     reminderAudio: {fileID: 0}
   - questName: Place The Sliced Head Of Yam Into The Bucket Of Sand
     questDescription: Place The Sliced Head Of Yam Into The Bucket Of Sand
-    itemsToEnable: []
+    itemsToEnable:
+    - {fileID: 2069940047}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: c7e20cab83a9d80419f3d9550bf2d7ec, type: 3}
     reminderAudio: {fileID: 0}
@@ -8233,15 +8234,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.591
+      value: 0.495
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.975
+      value: 1.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.404
+      value: 1.001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8282,6 +8283,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316992658331686828, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9092,13 +9097,14 @@ GameObject:
   - component: {fileID: 3469287836668884757}
   - component: {fileID: 1711813855894275039}
   - component: {fileID: 3469287836668884758}
+  - component: {fileID: 3469287836668884759}
   m_Layer: 0
   m_Name: Tray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1582813066261106489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9222,12 +9228,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271147581be00be419089579dd43465d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderTag: 0
+  colliderTag: 1
   dropPoints:
   - {fileID: 1783239707}
   - {fileID: 992808994}
   - {fileID: 27117293}
   maxYamCollected: 3
+--- !u!135 &3469287836668884759
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148894802442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.0019133473
+  m_Center: {x: -2.9802322e-10, y: 0.00041710117, z: 0.000012467506}
 --- !u!4 &4112803775825710322
 Transform:
   m_ObjectHideFlags: 0
