@@ -92,4 +92,12 @@ public class GameManager : MonoBehaviour
             QuestManager.Main.CompleteQuest(3);
         }
     }
+
+    public void PlaceHeadOfYamInTrayQuest()
+    {
+        if (QuestManager.Main.currentQuestIndex == 4)
+        {
+            QuestManager.Main.CompleteQuest(4);
+        }
+    }
 }
