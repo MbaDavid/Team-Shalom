@@ -23,16 +23,18 @@ public class TrayAction : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag(colliderTag.ToString()))
         {
             if (QuestManager.Main.currentQuestIndex != 4)
                 return;
 
-            other.transform.position = dropPoints[currentIndex].position;
-            other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+         
             other.GetComponent<Rigidbody>().isKinematic = true;
+            other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            other.transform.position = dropPoints[currentIndex].position;
+
             other.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
             currentIndex++;
 

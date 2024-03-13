@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (QuestManager.Main.currentQuestIndex == 4)
         {
             QuestManager.Main.CompleteQuest(4);
-            StartCoroutine(SetTrayAsideQuest(2));
+            StartCoroutine(SetTrayAsideQuest(3));
         }
     }
 
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(t);
         QuestManager.Main.CompleteQuest(5);
-        StartCoroutine(MoveTowardsTheBucket(2));
+        StartCoroutine(MoveTowardsTheBucket(3));
     }
 
     private IEnumerator MoveTowardsTheBucket(float t)

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5665468678084410360}
   - component: {fileID: -3766318934016870939}
   - component: {fileID: 2556286636738871752}
+  - component: {fileID: 7695296140749843390}
   m_Layer: 7
   m_Name: yamCut
   m_TagString: YamSlice
@@ -300,3 +301,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.001019393, y: 0.0009895865, z: 0.001044519}
   m_Center: {x: 0.000004545465, y: -0.00004917732, z: -0.000029305984}
+--- !u!114 &7695296140749843390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874081481103606967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc97803c22023a49ab13d4ea895157d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
