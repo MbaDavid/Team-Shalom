@@ -27,13 +27,14 @@ public class TrayAction : MonoBehaviour
     {
         if (other.CompareTag(colliderTag.ToString()))
         {
-            if (QuestManager.Main.currentQuestIndex != 4)
+            if (QuestManager.Main.currentQuestIndex != 4 || other.GetComponent<ItemBehaviour>().isPlaced)
                 return;
 
          
             other.GetComponent<Rigidbody>().isKinematic = true;
             other.GetComponent<Rigidbody>().velocity = Vector3.zero;
             other.transform.position = dropPoints[currentIndex].position;
+            other.GetComponent<ItemBehaviour>().isPlaced = true;
 
             other.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
             currentIndex++;

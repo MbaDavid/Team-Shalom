@@ -2944,7 +2944,8 @@ MonoBehaviour:
     reminderAudio: {fileID: 0}
   - questName: Move Towards The Bucket
     questDescription: Move Towards The Bucket
-    itemsToEnable: []
+    itemsToEnable:
+    - {fileID: 2069940047}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: fd9489f3997895b41a351fccb462540e, type: 3}
     reminderAudio: {fileID: 0}
