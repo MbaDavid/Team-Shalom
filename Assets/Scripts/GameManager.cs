@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Main;
     public YamBehaviour bigYam;
     public TrayAction tray;
+    public BucketBehaviour sandBucket;
 
     public TextMeshProUGUI questText;
 
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public XROrigin xrOrigin;
     public Transform origin;
 
+    public GameObject handTrowel;
     private void Awake()
     {
         if (Main == null)
@@ -47,7 +49,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (QuestManager.Main.currentQuestIndex == 11)
+        {
+            if (handTrowel.GetComponent<ItemBehaviour>().isGrabbed == false)
+            {
+                DropTheTrowel();
+            }
+        }
     }
 
     IEnumerator BeginQuest(float time)
@@ -137,6 +145,23 @@ public class GameManager : MonoBehaviour
         if (QuestManager.Main.currentQuestIndex == 9)
         {
             QuestManager.Main.CompleteQuest(9);
+            sandBucket.enabled = true;
+        }
+    }
+
+    public void FillBucketWithSand()
+    {
+        if (QuestManager.Main.currentQuestIndex == 10)
+        {
+            QuestManager.Main.CompleteQuest(10);
+        }
+    }
+
+    public void DropTheTrowel()
+    {
+        if (QuestManager.Main.currentQuestIndex == 11)
+        {
+            QuestManager.Main.CompleteQuest(11);
         }
     }
 }

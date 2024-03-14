@@ -49,7 +49,7 @@ public class BucketBehaviour : MonoBehaviour
 
         }
 
-        if (other.CompareTag(trowelTag.ToString()) && (QuestManager.Main.currentQuestIndex == 8))
+        if (other.CompareTag(trowelTag.ToString()) && (QuestManager.Main.currentQuestIndex == 8 || QuestManager.Main.currentQuestIndex == 10) )
         {
    
             if (bucketContent == null)
@@ -69,7 +69,13 @@ public class BucketBehaviour : MonoBehaviour
                         item.DisableChildIems();
                     }
                     this.GetComponent<BucketBehaviour>().enabled = false;
-                    GameManager.Main.CoverTheYamWithSandQuest();
+                    if (QuestManager.Main.currentQuestIndex == 8)
+                    {
+                        GameManager.Main.CoverTheYamWithSandQuest();
+                    }
+                    else if (QuestManager.Main.currentQuestIndex == 10) {
+                        GameManager.Main.FillBucketWithSand();
+                    }
                 }
           
 

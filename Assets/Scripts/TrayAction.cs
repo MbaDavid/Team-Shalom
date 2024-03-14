@@ -33,12 +33,13 @@ public class TrayAction : MonoBehaviour
                 return;
 
          
-            other.GetComponent<Rigidbody>().isKinematic = true;
+
             Quaternion rotation = other.transform.rotation;
-            other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+          //  other.GetComponent<Rigidbody>().velocity = Vector3.zero;
             other.transform.position = dropPoints[currentIndex].position;
             other.transform.rotation = rotation;
             other.GetComponent<ItemBehaviour>().isPlaced = true;
+            other.GetComponent<Rigidbody>().isKinematic = true;
 
             other.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
             trayContents.Add(other.gameObject);
