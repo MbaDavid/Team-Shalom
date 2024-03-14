@@ -6762,7 +6762,7 @@ MonoBehaviour:
   frontPosSpawn: {fileID: 806349223}
   xrOrigin: {fileID: 1711423062}
   origin: {fileID: 1757325144}
-  handTrowel: {fileID: 0}
+  handTrowel: {fileID: 1404860419}
 --- !u!4 &1575982007
 Transform:
   m_ObjectHideFlags: 0
