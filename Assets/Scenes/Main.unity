@@ -539,6 +539,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 243a503758cd36a44944a3b7bd79b23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1404860423}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 243a503758cd36a44944a3b7bd79b23c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1404860427}
   m_SourcePrefab: {fileID: 100100000, guid: 243a503758cd36a44944a3b7bd79b23c, type: 3}
 --- !u!1 &186429495
 GameObject:
@@ -1532,6 +1535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliderTag: 1
+  trowelTag: 2
   dropPoint: {fileID: 1657836898}
 --- !u!135 &539380003
 SphereCollider:
@@ -5898,6 +5902,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1404860427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404860419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc97803c22023a49ab13d4ea895157d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaced: 0
+  isGrabbed: 0
+  isFilled: 0
+  childItems: []
 --- !u!1001 &1405850862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6713,6 +6733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653777239}
   - component: {fileID: 1653777240}
+  - component: {fileID: 1653777241}
   m_Layer: 7
   m_Name: ColliderFlat
   m_TagString: Trowel
@@ -6756,6 +6777,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.89613783, y: 0.98871636, z: 2}
   m_Center: {x: -0.037773073, y: -0.11094089, z: 0}
+--- !u!114 &1653777241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653777238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc97803c22023a49ab13d4ea895157d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaced: 0
+  isGrabbed: 0
+  isFilled: 0
+  childItems:
+  - {fileID: 1995202192}
 --- !u!1 &1657836897
 GameObject:
   m_ObjectHideFlags: 0
@@ -7353,6 +7391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliderTag: 1
+  trowelTag: 2
   dropPoint: {fileID: 1376317266}
 --- !u!135 &1720877076
 SphereCollider:

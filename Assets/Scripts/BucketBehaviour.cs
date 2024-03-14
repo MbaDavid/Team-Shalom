@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BucketBehaviour : MonoBehaviour
 {
     public CollisionTAG colliderTag;
-    public CollisionTAG towelTag;
+    public CollisionTAG trowelTag;
 
     public Transform dropPoint;
 
@@ -24,6 +24,8 @@ public class BucketBehaviour : MonoBehaviour
             }
 
         }
+
+
 
     }
 
@@ -46,6 +48,38 @@ public class BucketBehaviour : MonoBehaviour
             bucketContent = other.gameObject;
 
         }
-    }
 
-}
+        if (other.CompareTag(trowelTag.ToString()))
+        {
+            if (QuestManager.Main.currentQuestIndex != 8)
+                return;
+
+
+            if (bucketContent == null)
+            {
+                ItemBehaviour item = other.GetComponent<ItemBehaviour>();
+                if (item != null)
+                {
+                    item.EnableChildIems();
+                }
+            }
+            else
+            {
+                if (other.GetComponent<ItemBehaviour>().isFilled) {
+                    ItemBehaviour item = other.GetComponent<ItemBehaviour>();
+                    if (item != null)
+                    {
+                        item.DisableChildIems();
+                    }
+                    GameManager.Main.CoverTheYamWithSandQuest();
+                }
+          
+
+                
+            }
+
+        }
+
+        }
+
+    }

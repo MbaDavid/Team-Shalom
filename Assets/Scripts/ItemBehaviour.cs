@@ -5,8 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ItemBehaviour : MonoBehaviour
 {
-    public bool isPlaced = false;
-    public bool isGrabbed = false;
+    [HideInInspector] public bool isPlaced = false;
+    [HideInInspector] public bool isGrabbed = false;
+    [HideInInspector]public bool isFilled = false;
 
     public List<GameObject> childItems = new List<GameObject>();
 
@@ -19,18 +20,22 @@ public class ItemBehaviour : MonoBehaviour
 
     public void EnableChildIems()
     {
+        if (childItems == null || childItems.Count == 0) return;
         for (int i = 0; i < childItems.Count; i++)
         {
             childItems[i].SetActive(true);
         }
+        isFilled = true;
     }
 
     public void DisableChildIems()
     {
+        if (childItems == null || childItems.Count == 0) return;
         for (int i = 0; i < childItems.Count; i++)
         {
             childItems[i].SetActive(false);
         }
+        isFilled = false;
     }
 
     private void OnEnable()

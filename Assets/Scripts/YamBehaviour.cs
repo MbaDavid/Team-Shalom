@@ -6,7 +6,8 @@ using UnityEngine;
 public enum CollisionTAG
 {
     Knife,
-    YamSlice
+    YamSlice,
+    Trowel
 }
 
 public class YamBehaviour : MonoBehaviour
@@ -34,7 +35,7 @@ public class YamBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnedCount >= numOfSpawns + 3)
+        if (spawnedCount >= numOfSpawns + 3 && QuestManager.Main.currentQuestIndex == 3)
         {
             GameManager.Main.CutuptheheadoftheyamQuest();
         }

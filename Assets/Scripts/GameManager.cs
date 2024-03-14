@@ -123,4 +123,12 @@ public class GameManager : MonoBehaviour
             QuestManager.Main.CompleteQuest(7);
         }
         }
+
+    public void CoverTheYamWithSandQuest()
+    {
+        if (QuestManager.Main.currentQuestIndex == 8)
+        {
+            QuestManager.Main.CompleteQuest(8);
+        }
+    }
 }
