@@ -131,4 +131,12 @@ public class GameManager : MonoBehaviour
             QuestManager.Main.CompleteQuest(8);
         }
     }
+
+    public void AddManureToTheBucket()
+    {
+        if (QuestManager.Main.currentQuestIndex == 9)
+        {
+            QuestManager.Main.CompleteQuest(9);
+        }
+    }
 }

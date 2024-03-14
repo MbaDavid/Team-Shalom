@@ -49,12 +49,9 @@ public class BucketBehaviour : MonoBehaviour
 
         }
 
-        if (other.CompareTag(trowelTag.ToString()))
+        if (other.CompareTag(trowelTag.ToString()) && (QuestManager.Main.currentQuestIndex == 8))
         {
-            if (QuestManager.Main.currentQuestIndex != 8)
-                return;
-
-
+   
             if (bucketContent == null)
             {
                 ItemBehaviour item = other.GetComponent<ItemBehaviour>();
@@ -71,6 +68,7 @@ public class BucketBehaviour : MonoBehaviour
                     {
                         item.DisableChildIems();
                     }
+                    this.GetComponent<BucketBehaviour>().enabled = false;
                     GameManager.Main.CoverTheYamWithSandQuest();
                 }
           
@@ -80,6 +78,39 @@ public class BucketBehaviour : MonoBehaviour
 
         }
 
+        if (other.CompareTag(trowelTag.ToString()) && (QuestManager.Main.currentQuestIndex == 9))
+        {
+
+            if (bucketContent == null)
+            {
+
+                ItemBehaviour item = other.GetComponent<ItemBehaviour>();
+                if (item != null)
+                {
+                    
+                    item.EnableChildIems();
+                }
+
+            }
+            else
+            {
+                if (other.GetComponent<ItemBehaviour>().isFilled)
+                {
+                    ItemBehaviour item = other.GetComponent<ItemBehaviour>();
+                    if (item != null)
+                    {
+                        item.DisableChildIems();
+                    }
+                    this.GetComponent<BucketBehaviour>().enabled = false;
+                    GameManager.Main.AddManureToTheBucket();
+                }
+
+
+
+            }
+
         }
+
+    }
 
     }

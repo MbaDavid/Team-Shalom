@@ -7,7 +7,7 @@ public class ItemBehaviour : MonoBehaviour
 {
     [HideInInspector] public bool isPlaced = false;
     [HideInInspector] public bool isGrabbed = false;
-    [HideInInspector]public bool isFilled = false;
+    public bool isFilled = false;
 
     public List<GameObject> childItems = new List<GameObject>();
 
