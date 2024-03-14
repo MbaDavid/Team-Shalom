@@ -8,11 +8,29 @@ public class ItemBehaviour : MonoBehaviour
     public bool isPlaced = false;
     public bool isGrabbed = false;
 
+    public List<GameObject> childItems = new List<GameObject>();
+
     private XRGrabInteractable grabInteractable;
 
     private void Awake()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
+    }
+
+    public void EnableChildIems()
+    {
+        for (int i = 0; i < childItems.Count; i++)
+        {
+            childItems[i].SetActive(true);
+        }
+    }
+
+    public void DisableChildIems()
+    {
+        for (int i = 0; i < childItems.Count; i++)
+        {
+            childItems[i].SetActive(false);
+        }
     }
 
     private void OnEnable()

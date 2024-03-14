@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BucketBehaviour : MonoBehaviour
 {
     public CollisionTAG colliderTag;
+    public CollisionTAG towelTag;
 
     public Transform dropPoint;
 
@@ -13,13 +14,17 @@ public class BucketBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (QuestManager.Main.currentQuestIndex != 7)
-            return;
-
-        if (bucketContent != null)
+        if (QuestManager.Main.currentQuestIndex == 7)
         {
-            GameManager.Main.PlaceSliceOfYamInBucketQuest();
+
+
+            if (bucketContent != null)
+            {
+                GameManager.Main.PlaceSliceOfYamInBucketQuest();
+            }
+
         }
+
     }
 
     private void OnTriggerStay(Collider other)
