@@ -5953,6 +5953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bigYam: {fileID: 467457463}
+  tray: {fileID: 3469287836668884758}
   questText: {fileID: 792721797}
   frontPosSpawn: {fileID: 806349223}
   xrOrigin: {fileID: 1711423062}

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Main;
     public YamBehaviour bigYam;
+    public TrayAction tray;
 
     public TextMeshProUGUI questText;
 
@@ -113,5 +114,6 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(t);
         QuestManager.Main.CompleteQuest(6);
+        tray.FreeAllTrayItems();
     }
 }
