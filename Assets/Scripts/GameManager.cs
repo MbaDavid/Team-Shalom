@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       StartCoroutine( BeginQuest(1));
-      //  Recenter();
+        StartCoroutine(BeginQuest(1));
+        //  Recenter();
     }
 
     public void Recenter()
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     IEnumerator BeginQuest(float time)
@@ -79,8 +79,8 @@ public class GameManager : MonoBehaviour
             bigYam.transform.rotation = Quaternion.Euler(-90, 90, 0);
 
             bigYam.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            bigYam.GetComponent<Rigidbody>().isKinematic =true;
-            bigYam.GetComponent<XRGrabInteractable>().enabled =false;
+            bigYam.GetComponent<Rigidbody>().isKinematic = true;
+            bigYam.GetComponent<XRGrabInteractable>().enabled = false;
 
             QuestManager.Main.CompleteQuest(2);
         }
@@ -116,4 +116,11 @@ public class GameManager : MonoBehaviour
         QuestManager.Main.CompleteQuest(6);
         tray.FreeAllTrayItems();
     }
+
+    public void PlaceSliceOfYamInBucketQuest(){
+             if (QuestManager.Main.currentQuestIndex == 7)
+        {
+            QuestManager.Main.CompleteQuest(7);
+        }
+        }
 }
