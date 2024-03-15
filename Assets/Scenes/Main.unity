@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.076
+      value: 0.105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -872,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.825
+      value: 0.839
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -931,6 +931,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 303533889}
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1187086593}
     - targetCorrespondingSourceObject: {fileID: -8192628679282142208, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 303533891}
@@ -4486,6 +4489,37 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
+--- !u!1 &1187086591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
+  m_PrefabInstance: {fileID: 303533886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1187086593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187086591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81aea88d58994543a50b91192d64623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 0
+  MaxWobble: 0.03
+  WobbleSpeedMove: 1
+  fillAmount: 0.5
+  Recovery: 1
+  Thickness: 1
+  CompensateShapeAmount: 0.088
+  mesh: {fileID: 2534964839176971238, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
+  rend: {fileID: 1187086594}
+--- !u!23 &1187086594 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7202271454713460447, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
+  m_PrefabInstance: {fileID: 303533886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1213642620
 GameObject:
   m_ObjectHideFlags: 0
