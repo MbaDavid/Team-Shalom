@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.105
+      value: 0.082
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -872,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.839
+      value: 0.574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -909,6 +909,10 @@ PrefabInstance:
     - target: {fileID: -5568371526223589888, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 88.4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5f31654c5040f5d4fb95fcd7e6f8a6cc, type: 3}
       propertyPath: m_Name
@@ -1050,7 +1054,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1046772801}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -8607,7 +8611,15 @@ MonoBehaviour:
     reminderAudio: {fileID: 0}
   - questName: Water The Planted Yam
     questDescription: Water The Planted Yam
-    itemsToEnable: []
+    itemsToEnable:
+    - {fileID: 303533887}
+    itemsToDisable: []
+    introAudio: {fileID: 8300000, guid: 14ebbe56f0b4dd14fa86e62946649e34, type: 3}
+    reminderAudio: {fileID: 0}
+  - questName: Watch the yam grow
+    questDescription: Yam takes months to grow
+    itemsToEnable:
+    - {fileID: 303533887}
     itemsToDisable: []
     introAudio: {fileID: 8300000, guid: 14ebbe56f0b4dd14fa86e62946649e34, type: 3}
     reminderAudio: {fileID: 0}
