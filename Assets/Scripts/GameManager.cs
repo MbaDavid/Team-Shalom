@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
         if (QuestManager.Main.currentQuestIndex == 12)
         {
-            if (Jug.GetComponent<PourDetector>().pouredObject == MainBucket)
+            if (Jug.GetComponent<PourDetector>().pouredObject != null && Jug.GetComponent<PourDetector>().pouredObject == MainBucket)
             {
                 WaterThePlantedYam();
             }

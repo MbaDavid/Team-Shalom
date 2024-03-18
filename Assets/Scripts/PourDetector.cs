@@ -12,6 +12,7 @@ public class PourDetector : MonoBehaviour
 
     [SerializeField] private GameObject pourEffect;
     public GameObject pouredObject;
+    public LayerMask pourLayermask;
     // Update is called once per frame
     void Update()
     {
@@ -47,11 +48,11 @@ public class PourDetector : MonoBehaviour
 
     private GameObject GetPourPoint()
     {
-        Ray ray = new Ray(target.position, -target.up);
+        Ray ray = new Ray(target.position, -target.forward);
         RaycastHit hit;
 
-        Physics.Raycast(ray, out hit, Mathf.Infinity);
-
+        Physics.Raycast(ray, out hit, Mathf.Infinity,pourLayermask);
+        Debug.Log(hit.collider.gameObject.name);
         return hit.collider.gameObject;
     }
 
