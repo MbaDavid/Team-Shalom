@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
 
         if (QuestManager.Main.currentQuestIndex == 13)
         {
-            plant.transform.localScale = Vector3.Lerp(plant.transform.localScale, Vector3.one, Time.deltaTime * 0.125f);
+            plant.transform.localScale = Vector3.Lerp(plant.transform.localScale, new Vector3(1.5f,1.5f,1.5f), Time.deltaTime * 0.125f);
         }
     }
 

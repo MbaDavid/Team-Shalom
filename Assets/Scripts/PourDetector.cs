@@ -53,7 +53,7 @@ public class PourDetector : MonoBehaviour
 
         Physics.Raycast(ray, out hit, Mathf.Infinity,pourLayermask);
      
-        return hit.collider.gameObject;
+        return hit.collider?.gameObject;
     }
 
     private float CalculatePourAngle()

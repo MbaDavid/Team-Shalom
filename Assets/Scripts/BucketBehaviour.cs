@@ -14,6 +14,8 @@ public class BucketBehaviour : MonoBehaviour
 
     private void Update()
     {
+        if (QuestManager.Main == null)
+            return;
         if (QuestManager.Main.currentQuestIndex == 7)
         {
 
