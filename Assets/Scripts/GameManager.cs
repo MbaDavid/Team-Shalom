@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public Transform origin;
 
     public GameObject handTrowel;
+    public GameObject Jug;
+    public GameObject MainBucket;
     private void Awake()
     {
         if (Main == null)
@@ -54,6 +56,14 @@ public class GameManager : MonoBehaviour
             if (handTrowel.GetComponent<ItemBehaviour>().isGrabbed == false)
             {
                 DropTheTrowel();
+            }
+        }
+
+        if (QuestManager.Main.currentQuestIndex == 12)
+        {
+            if (Jug.GetComponent<PourDetector>().pouredObject == MainBucket)
+            {
+                WaterThePlantedYam();
             }
         }
     }
@@ -162,6 +172,14 @@ public class GameManager : MonoBehaviour
         if (QuestManager.Main.currentQuestIndex == 11)
         {
             QuestManager.Main.CompleteQuest(11);
+        }
+    }
+
+    public void WaterThePlantedYam()
+    {
+        if (QuestManager.Main.currentQuestIndex == 12)
+        {
+            QuestManager.Main.CompleteQuest(12);
         }
     }
 }
