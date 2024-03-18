@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public GameObject handTrowel;
     public GameObject Jug;
     public GameObject MainBucket;
+
+    public GameObject plant;
     private void Awake()
     {
         if (Main == null)
@@ -65,6 +67,11 @@ public class GameManager : MonoBehaviour
             {
                 WaterThePlantedYam();
             }
+        }
+
+        if (QuestManager.Main.currentQuestIndex == 13)
+        {
+            plant.transform.localScale = Vector3.Lerp(plant.transform.localScale, Vector3.one, Time.deltaTime * 0.125f);
         }
     }
 

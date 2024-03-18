@@ -52,7 +52,7 @@ public class PourDetector : MonoBehaviour
         RaycastHit hit;
 
         Physics.Raycast(ray, out hit, Mathf.Infinity,pourLayermask);
-        Debug.Log(hit.collider.gameObject.name);
+     
         return hit.collider.gameObject;
     }
 

@@ -639,8 +639,8 @@ Transform:
   m_GameObject: {fileID: 129395006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00033, y: -0.0001, z: -0.000147}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.0002184, y: -0.00021, z: -0.00009}
+  m_LocalScale: {x: 0.59352416, y: 0.6075875, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2069940051}
@@ -3397,6 +3397,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &835358572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d198db2d9ba9d2c498e14ada410b75d0, type: 3}
+  m_PrefabInstance: {fileID: 550836238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &835358575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d198db2d9ba9d2c498e14ada410b75d0, type: 3}
@@ -3429,8 +3434,8 @@ Transform:
   m_GameObject: {fileID: 844893569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000091, y: -0.000281, z: 0}
-  m_LocalScale: {x: 0.73, y: 0.73, z: 0.73}
+  m_LocalPosition: {x: 0.000031, y: -0.00005, z: 0.00031}
+  m_LocalScale: {x: 0.9675304, y: 1.0065536, z: 0.896148}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2069940051}
@@ -8850,9 +8855,14 @@ MonoBehaviour:
   - questName: Watch the yam grow
     questDescription: Yam takes months to grow
     itemsToEnable:
-    - {fileID: 303533887}
-    itemsToDisable: []
-    introAudio: {fileID: 8300000, guid: 14ebbe56f0b4dd14fa86e62946649e34, type: 3}
+    - {fileID: 835358572}
+    itemsToDisable:
+    - {fileID: 919132148894802442}
+    - {fileID: 1779714934}
+    - {fileID: 1405850863}
+    - {fileID: 1404860419}
+    - {fileID: 467457453}
+    introAudio: {fileID: 0}
     reminderAudio: {fileID: 0}
   currentQuestIndex: 0
 --- !u!4 &948466691
@@ -12206,6 +12216,7 @@ MonoBehaviour:
   handTrowel: {fileID: 1404860419}
   Jug: {fileID: 303533887}
   MainBucket: {fileID: 2069940047}
+  plant: {fileID: 835358572}
 --- !u!4 &1575982007
 Transform:
   m_ObjectHideFlags: 0
@@ -12347,6 +12358,9 @@ MonoBehaviour:
   target: {fileID: 901510206}
   pourEffect: {fileID: 884651267}
   pouredObject: {fileID: 0}
+  pourLayermask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1645344519
 GameObject:
   m_ObjectHideFlags: 0
@@ -14860,8 +14874,12 @@ PrefabInstance:
       value: MainBucket
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316992658331686828, guid: 7884c3f449ab2c948ba31b18c4af2ef5, type: 3}
       propertyPath: m_LocalScale.x
