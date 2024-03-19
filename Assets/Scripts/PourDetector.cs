@@ -49,11 +49,19 @@ public class PourDetector : MonoBehaviour
     private GameObject GetPourPoint()
     {
         Ray ray = new Ray(target.position, -target.forward);
-        RaycastHit hit;
 
-        Physics.Raycast(ray, out hit, Mathf.Infinity,pourLayermask);
-     
-        return hit.collider?.gameObject;
+        Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, pourLayermask);
+
+        if (hit.collider == null)
+            return null;
+
+        if (hit.collider.CompareTag(CollisionTAG.MainBucket.ToString())) {
+
+            return hit.collider.gameObject;
+        }
+
+        return null;
+ 
     }
 
     private float CalculatePourAngle()

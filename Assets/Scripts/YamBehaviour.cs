@@ -7,7 +7,8 @@ public enum CollisionTAG
 {
     Knife,
     YamSlice,
-    Trowel
+    Trowel,
+    MainBucket
 }
 
 public class YamBehaviour : MonoBehaviour
