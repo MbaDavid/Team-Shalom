@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(BeginQuest(1));
+        StartCoroutine(BeginQuest(3));
         //  Recenter();
     }
 
