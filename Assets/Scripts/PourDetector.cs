@@ -19,6 +19,15 @@ public class PourDetector : MonoBehaviour
        
         bool pourCheck = CalculatePourAngle() > pourThreshold;
 
+        if (isPouring)
+        {
+            pouredObject = GetPourPoint();
+        }
+        else
+        {
+            pouredObject = null;
+        }
+
         if (pourCheck != isPouring )
         {
             isPouring = pourCheck;
@@ -37,7 +46,7 @@ public class PourDetector : MonoBehaviour
     private void StartPour()
     {
         pourEffect.SetActive(true);
-        pouredObject = GetPourPoint();
+       // pouredObject = GetPourPoint();
     }
 
     private void EndPour()
@@ -51,12 +60,12 @@ public class PourDetector : MonoBehaviour
         Ray ray = new Ray(target.position, -target.forward);
 
         Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, pourLayermask);
-
+        //Debug.DrawLine(target.position,  -target.forward * 1000, Color.red);
         if (hit.collider == null)
             return null;
 
         if (hit.collider.CompareTag(CollisionTAG.MainBucket.ToString())) {
-
+            //Debug.Log(hit.collider.name);
             return hit.collider.gameObject;
         }
 
